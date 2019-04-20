@@ -25,3 +25,6 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno509
 
 # Kernel
 TARGET_KERNEL_CONFIG := CTL_defconfig
+
+# Vendor
+BOARD_PREBUILT_VENDORIMAGE := vendor/nokia/prebuilt/CTL/vendor.img
