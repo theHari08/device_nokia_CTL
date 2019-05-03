@@ -55,3 +55,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="CTL_sprout-user 9 PPR1.180610.011 00WW_3_54E:user release-keys"
 
 BUILD_FINGERPRINT := Nokia/Crystal_00WW/CTL_sprout:9/PPR1.180610.011/00WW_3_54E:user/release-keys
+
+# GAPPS
+ifeq ($(CURRENT_BUILD_TYPE), gapps)
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+endif
